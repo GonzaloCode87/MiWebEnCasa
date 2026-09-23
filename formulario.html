@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <!-- header o encabezado -->
+    <header>
+      <h1>Mi primer formulario</h1>
+      <h2>Menu:</h2>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <p></p>
+        <a href="horario.html">Horario</a>
+        <p></p>
+        <a href="formulario.html">Formulario</a>
+        
+      </nav>
+    </header>
+
+    <main>
+      <form action="">
+        <h2 class = "Introform">Formulario de contacto</h2>
+        <fieldset>
+          
+          <legend> <br>
+            Datos personales</legend>
+            
+            <p>
+            <label for="nombre">Nombre*:</label>
+            <input type="text" id="nombre" name="nombre" required color: blue/>
+            </p>
+
+            <p>
+            <label for="apellido">Apellido*:</label>
+            <input type="text" id="apellido" name="apellido" required />
+            </p>
+
+            <p>
+            <label for="email">Email*:</label>
+            <input type="email" id="email" name="email" required />
+            </p>
+            <p>
+            <label for="contraseña">Contraseña*:</label>
+            <input type="password"id="contraseña"name="contraseña"required/>
+            </p>
+            <p>
+            <label for="pagina web">Página web:</label>
+            <input type="text" id="pagina web" name="pagina web" required />
+            </p>
+            <p>
+            <label for="Buscar">Buscar:</label>
+            <input type="text" id="Buscar" name="Buscar" required />
+            </p>
+        
+        </fieldset>
+        <fieldset>
+          <legend> <br>Valores numéricos</legend>
+          <p>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="0" max="120">
+          </p>
+          
+        </fieldset>
+
+        <fieldset>
+          <legend> <br>Fechas y horas</legend>
+
+          <!-- DATE -->
+          <p>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha">
+          </p>
+
+          <!-- TIME -->
+          <p>
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora">
+          </p>
+
+          <!-- DATETIME-LOCAL -->
+          <p>
+            <label for="fechaHora">Fecha y hora:</label>
+            <input type="datetime-local" id="fechaHora" name="fechaHora">
+          </p>
+
+          <!-- MONTH -->
+          <p>
+            <label for="mes">Mes:</label>
+            <input type="month" id="mes" name="mes">
+          </p>
+
+          <!-- WEEK -->
+          <p>
+            <label for="semana">Semana:</label>
+            <input type="week" id="semana" name="semana">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend> <br>Botones</legend>
+
+          <!-- SUBMIT -->
+          <input type="submit" value="Enviar formulario">
+
+          <!-- RESET -->
+          <input type="reset" value="Limpiar formulario">
+        </fieldset>
+      </form>
+    </main>
+
+    <footer><p>© 2024 Mi Web de Gonzalo. <br> Todos los derechos reservados.</p></footer>
+  </body>
+</html>

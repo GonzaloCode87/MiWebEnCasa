@@ -1,0 +1,17 @@
+
+
+header, footer{
+    background-color: #e20505;
+    padding: 1em;
+    color: white;
+    text-align: center;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+td, th{
+    border: 1px solid #fff;
+    padding: 8px;
+    text-align: right;
+}
