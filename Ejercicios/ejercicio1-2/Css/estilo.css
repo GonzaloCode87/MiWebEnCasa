@@ -1,0 +1,69 @@
+.encabezado {
+  color: red;
+}
+header {
+  text-align: center;
+  color: red;
+  font-size: 25px;
+}
+
+html {
+  height: 100%;
+}
+
+.colores {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+footer {
+  background-color: #637dff;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 20px;
+  border: 3px solid #000;
+  text-align: left;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+body {
+  background: url("../Img/png-transparent-purple-cosmos-flower-illustration-flower-blossom-flower-purple-violet-color-thumbnail.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 5px;
+}
+
+.dialogo {
+  margin-left: 10px;
+  border: hidden;
+  background-color: #f5c131;
+  color: #fffdfd;
+  position: static;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+}
+
+.seccion {
+  
+  margin-bottom: 20px;
+  
+}
+.parr1 {
+margin-left: 15px;
+text-align: center;
+display: flex;
+}
+.seccion1 {
+ display: flex;
+  flex-direction: row;
+  margin-left: 15px;
+}

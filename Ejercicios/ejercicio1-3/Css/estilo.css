@@ -1,0 +1,70 @@
+.p1{
+    margin-bottom: 0px;
+  
+    text-align: center;
+}
+
+.contenedorprin{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    
+}
+
+.tabla1{
+   border: 2px solid blue;
+   border-color: blue; 
+   border-spacing: 6px;
+   padding-bottom: 15px;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.tabla1 td{
+    border: 2px solid blue;
+    text-align: left;
+    padding: 15px;   
+    
+}
+
+.tabla1 th{
+    padding-top: 18px;
+    
+}
+
+.tablass{
+
+display: inline-flex;
+flex-direction: column;
+align-items: center;
+
+
+}
+
+.tabla2{
+
+    border: 2px solid green;
+    border-collapse: collapse;
+   padding-bottom: 15px;
+   padding-left: 15px;
+   padding-right: 15px;
+
+}
+.tabla2 td{
+border: 2px solid rgb(0, 255, 0);
+padding: 30px;
+
+}
+.tabla2 th{
+    border: 2px solid rgb(0, 255, 0);
+    padding: 30px;
+}
+
+.verde {
+    background-color: rgb(63, 228, 63);
+}
+
+.gris{
+    background-color: rgb(228, 222, 222);
+}

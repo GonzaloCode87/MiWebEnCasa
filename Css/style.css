@@ -266,6 +266,43 @@ a:hover {
   font-size: 0.9rem;
 }
 
+.exercise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.exercise-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 210px;
+  padding: 22px;
+  background: rgba(43, 32, 34, 0.88);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.exercise-card:hover {
+  border-color: var(--graffiti-pink);
+  transform: translateY(-3px);
+}
+
+.exercise-card h3 {
+  margin: 0 0 10px;
+  color: var(--ink);
+  font-size: 1.08rem;
+}
+
+.exercise-card p {
+  flex: 1;
+}
+
+.exercise-card .Vinc {
+  align-self: flex-start;
+}
+
 .schedule-wrap {
   overflow-x: auto;
   border: 1px solid var(--border);

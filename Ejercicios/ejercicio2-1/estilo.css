@@ -1,0 +1,32 @@
+h3 {
+  background-color: #63d7ed;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  margin: 10px 0 15px;
+  padding: 11px;
+  text-align: center;
+}
+
+.desord {
+  list-style-type: circle;
+}
+
+ul ul,
+ol ul {
+  list-style-type: square;
+}
+
+.letras {
+  list-style-type: lower-alpha;
+}
+
+.ies {
+  list-style-type: lower-roman;
+}
+
+hr {
+  border: 1px solid black;
+  margin: 16px 0px;
+}

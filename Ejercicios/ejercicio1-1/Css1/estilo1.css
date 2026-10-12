@@ -1,0 +1,44 @@
+h2 {
+    color: #ff1100;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding: 5px;
+}
+
+    p1{
+    color: #000000;
+    font-size: 30px;
+    text-align: justify;
+    font-family: verdana;
+}
+.link{
+    background-color: #efecff;
+    border: 2px solid #8d79ff;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: 8px;
+    margin-right: 5px;
+}
+hr{
+    border: 1px solid #000000;
+    margin-bottom: 12px;
+    margin-top: 20px;
+    margin-left: 8px;
+    margin-right: 5px;
+}
+body {
+  border: 2px solid #8560ff;
+  margin: 5px;
+}
