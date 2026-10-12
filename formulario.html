@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,106 +7,88 @@
     <link rel="stylesheet" href="Css/style.css" />
   </head>
   <body>
-    <!-- header o encabezado -->
     <header>
       <h1>Mi primer formulario</h1>
-      <h2>Menu:</h2>
       <nav>
-        <a href="index.html">Inicio</a>
-        <p></p>
-        <a href="horario.html">Horario</a>
-        <p></p>
-        <a href="formulario.html">Formulario</a>
-        
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="horario.html">Horario</a></li>
+          <li><a href="formulario.html" aria-current="page">Formulario</a></li>
+        </ul>
       </nav>
     </header>
 
     <main>
+      <h2 class="Introform">Formulario de contacto</h2>
       <form action="">
-        <h2 class = "Introform">Formulario de contacto</h2>
         <fieldset>
-          
-          <legend> <br>
-            Datos personales</legend>
-            
-            <p>
+          <legend>Datos personales</legend>
+          <p>
             <label for="nombre">Nombre*:</label>
-            <input type="text" id="nombre" name="nombre" required color: blue/>
-            </p>
+            <input type="text" id="nombre" name="nombre" required />
+          </p>
 
-            <p>
+          <p>
             <label for="apellido">Apellido*:</label>
             <input type="text" id="apellido" name="apellido" required />
-            </p>
+          </p>
 
-            <p>
+          <p>
             <label for="email">Email*:</label>
             <input type="email" id="email" name="email" required />
-            </p>
-            <p>
-            <label for="contraseña">Contraseña*:</label>
-            <input type="password"id="contraseña"name="contraseña"required/>
-            </p>
-            <p>
-            <label for="pagina web">Página web:</label>
-            <input type="text" id="pagina web" name="pagina web" required />
-            </p>
-            <p>
-            <label for="Buscar">Buscar:</label>
-            <input type="text" id="Buscar" name="Buscar" required />
-            </p>
-        
+          </p>
+          <p>
+            <label for="contrasena">Contraseña*:</label>
+            <input type="password" id="contrasena" name="contrasena" required />
+          </p>
+          <p>
+            <label for="pagina-web">Página web:</label>
+            <input type="text" id="pagina-web" name="pagina-web" required />
+          </p>
+          <p>
+            <label for="buscar">Buscar:</label>
+            <input type="text" id="buscar" name="buscar" required />
+          </p>
         </fieldset>
         <fieldset>
-          <legend> <br>Valores numéricos</legend>
+          <legend>Valores numéricos</legend>
           <p>
             <label for="edad">Edad:</label>
-            <input type="number" id="edad" name="edad" min="0" max="120">
+            <input type="number" id="edad" name="edad" min="0" max="120" />
           </p>
-          
         </fieldset>
 
         <fieldset>
-          <legend> <br>Fechas y horas</legend>
-
-          <!-- DATE -->
+          <legend>Fechas y horas</legend>
           <p>
             <label for="fecha">Fecha:</label>
-            <input type="date" id="fecha" name="fecha">
+            <input type="date" id="fecha" name="fecha" />
           </p>
 
-          <!-- TIME -->
           <p>
             <label for="hora">Hora:</label>
-            <input type="time" id="hora" name="hora">
+            <input type="time" id="hora" name="hora" />
           </p>
 
-          <!-- DATETIME-LOCAL -->
           <p>
             <label for="fechaHora">Fecha y hora:</label>
-            <input type="datetime-local" id="fechaHora" name="fechaHora">
+            <input type="datetime-local" id="fechaHora" name="fechaHora" />
           </p>
 
-          <!-- MONTH -->
           <p>
             <label for="mes">Mes:</label>
-            <input type="month" id="mes" name="mes">
+            <input type="month" id="mes" name="mes" />
           </p>
 
-          <!-- WEEK -->
           <p>
             <label for="semana">Semana:</label>
-            <input type="week" id="semana" name="semana">
+            <input type="week" id="semana" name="semana" />
           </p>
         </fieldset>
 
         <fieldset>
-          <legend> <br>Botones</legend>
-
-          <!-- SUBMIT -->
+          <legend>Botones</legend>
           <input type="submit" value="Enviar formulario">
-
-          <!-- RESET -->
           <input type="reset" value="Limpiar formulario">
         </fieldset>
       </form>
