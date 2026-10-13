@@ -544,6 +544,30 @@ footer p {
   font-size: 0.9rem;
 }
 
+.gantt-main {
+  width: min(100% - 40px, 1440px);
+}
+
+.gantt-chart {
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: #fff;
+  overscroll-behavior-x: contain;
+}
+
+.gantt-chart img {
+  display: block;
+  width: 2711px;
+  max-width: none;
+  height: auto;
+}
+
+.gantt-link {
+  margin-top: 20px;
+}
+
 @media (max-width: 760px) {
   header {
     flex-direction: column;
@@ -556,6 +580,10 @@ footer p {
     margin: 24px auto;
     padding: 24px 20px;
     border-radius: 18px;
+  }
+
+  .gantt-main {
+    width: min(100% - 28px, 1440px);
   }
 
   main::before {
