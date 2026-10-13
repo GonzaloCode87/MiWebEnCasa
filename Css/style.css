@@ -546,9 +546,12 @@ footer p {
 
 .gantt-main {
   width: min(100% - 40px, 1440px);
+  min-width: 0;
 }
 
 .gantt-chart {
+  width: 100%;
+  min-width: 0;
   max-width: 100%;
   overflow-x: auto;
   border: 1px solid var(--border);
