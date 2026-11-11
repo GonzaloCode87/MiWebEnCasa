@@ -429,6 +429,92 @@ a:hover {
   border-radius: 18px;
 }
 
+.calculadora {
+  --calculadora-tecla: rgba(24, 19, 21, 0.8);
+  --calculadora-texto: var(--ink);
+  --calculadora-borde: var(--border);
+  width: min(100%, 380px);
+  margin: 28px auto 0;
+  padding: clamp(18px, 4vw, 26px);
+  background: rgba(43, 32, 34, 0.9);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.calculadora-pantalla {
+  width: 100%;
+  min-height: 76px;
+  margin-bottom: 16px;
+  padding: 14px 16px;
+  color: #fff;
+  background: rgba(24, 19, 21, 0.9);
+  border: 1px solid rgba(255, 61, 141, 0.45);
+  border-radius: 12px;
+  font: inherit;
+  font-size: clamp(1.7rem, 8vw, 2.2rem);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.calculadora-teclas {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.calculadora-teclas button {
+  min-height: 56px;
+  padding: 8px;
+  color: var(--calculadora-texto);
+  background: var(--calculadora-tecla);
+  border: 1px solid var(--calculadora-borde);
+  border-radius: 12px;
+  font: inherit;
+  font-size: 1.15rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: filter 160ms ease, transform 160ms ease;
+}
+
+.calculadora-teclas button:hover {
+  filter: brightness(1.25);
+  transform: translateY(-2px);
+}
+
+.calculadora-teclas button:focus-visible {
+  outline: 3px solid var(--graffiti-blue);
+  outline-offset: 2px;
+}
+
+.calculadora-teclas .tecla-operador,
+.calculadora-teclas .tecla-especial {
+  color: #fff;
+  background: linear-gradient(135deg, #a83269, #62308f);
+  border-color: transparent;
+}
+
+.calculadora-teclas .tecla-cero {
+  grid-column: span 2;
+}
+
+.calculadora-teclas .tecla-igual {
+  color: #fff;
+  background: linear-gradient(135deg, #dc654d, #a83269);
+  border-color: transparent;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .game-result {
   color: #fff;
   text-align: center;

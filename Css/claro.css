@@ -381,6 +381,20 @@ a:hover {
   border-color: var(--border);
 }
 
+.calculadora {
+  --calculadora-tecla: #fff;
+  --calculadora-texto: var(--ink);
+  --calculadora-borde: var(--border);
+  background: rgba(255, 250, 253, 0.96);
+  border-color: var(--border);
+}
+
+.calculadora-pantalla {
+  color: var(--ink);
+  background: #fff;
+  border-color: rgba(146, 43, 80, 0.35);
+}
+
 .jugada li,
 .marcador li {
   color: var(--ink);
