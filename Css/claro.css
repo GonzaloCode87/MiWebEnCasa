@@ -1,17 +1,17 @@
 :root {
-  color-scheme: white;
-  --ink: #f4e9e7;
-  --muted: #eeeaea;
-  --accent: #f08a70;
-  --accent-dark: #d85d4b;
+  color-scheme: light;
+  --ink: #30232a;
+  --muted: #554650;
+  --accent: #d85d7c;
+  --accent-dark: #922b50;
   --graffiti-pink: #ff3d8d;
   --graffiti-yellow: #f9e900;
   --graffiti-blue: #21d4fd;
   --graffiti-purple: #a855f7;
-  --surface: #21191b;
-  --page: #fdfbfc;
-  --border: #443236;
-  --shadow: 0 18px 44px rgba(0, 0, 0, 0.28);
+  --surface: #fffafd;
+  --page: #fff8fb;
+  --border: #ddc6d1;
+  --shadow: 0 18px 44px rgba(76, 25, 50, 0.16);
 }
 
 *,
@@ -60,13 +60,13 @@ header {
   justify-content: space-between;
   gap: 24px;
   padding: 20px max(24px, calc((100% - 1120px) / 2));
-  background-color: #eb468d;
+  background-color: #922b50;
   border-bottom: 1px solid rgba(255, 220, 215, 0.08);
 }
 
 header h1 {
   margin: 0;
-  color: var(--ink);
+  color: #fff;
   font-size: clamp(1.25rem, 2.5vw, 1.7rem);
   letter-spacing: -0.04em;
 }
@@ -89,7 +89,7 @@ nav a {
   align-items: center;
   min-height: 42px;
   padding: 8px 15px;
-  color: var(--ink);
+  color: #fff;
   font-size: 0.95rem;
   font-weight: 650;
   text-decoration: none;
@@ -108,6 +108,19 @@ nav a:hover {
   transform: translateY(-1px);
 }
 
+nav .theme-toggle {
+  border-color: #bda2b0;
+  background: #76616c;
+}
+
+nav .theme-toggle:hover {
+  background: #5b3e4d;
+}
+
+nav .theme-toggle[aria-checked="true"] {
+  background: #922b50;
+}
+
 main {
   position: relative;
   z-index: 1;
@@ -115,8 +128,8 @@ main {
   width: min(100% - 40px, 1080px);
   margin: 48px auto;
   padding: clamp(24px, 5vw, 48px);
-  background: rgba(238, 231, 232, 0.925);
-  border: 1px solid rgba(255, 220, 215, 0.07);
+  background: rgba(255, 250, 253, 0.94);
+  border: 1px solid rgba(146, 43, 80, 0.12);
   border-radius: 22px;
   box-shadow: var(--shadow);
 }
@@ -238,7 +251,7 @@ a:hover {
   min-width: 0;
   margin: 0;
   overflow: hidden;
-  background: #2b2022;
+  background: #fffafd;
   border: 1px solid var(--border);
   border-radius: 16px;
   transition: border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
@@ -295,6 +308,22 @@ a:hover {
   font-size: 1.08rem;
 }
 
+.juego {
+  background: rgba(255, 250, 253, 0.94);
+  border-color: var(--border);
+}
+
+.jugada li,
+.marcador li {
+  color: var(--ink);
+  background: #fff;
+  border-color: var(--border);
+}
+
+.marcador li {
+  color: var(--muted);
+}
+
 .exercise-card p {
   flex: 1;
 }
@@ -343,7 +372,7 @@ thead th {
 
 tbody th.hora {
   color: var(--muted);
-  background: #2a2022;
+  background: #f2e7ed;
   font-size: 0.86rem;
   font-weight: 600;
   white-space: nowrap;
@@ -408,7 +437,7 @@ fieldset {
   padding: 22px;
   border: 1px solid var(--border);
   border-radius: 16px;
-  background: #261e20;
+  background: #fffafd;
 }
 
 fieldset:first-of-type,
@@ -454,9 +483,9 @@ button {
   padding: 10px 12px;
   color: var(--ink);
   font: inherit;
-  border: 1px solid #594448;
+  border: 1px solid #c9aebc;
   border-radius: 10px;
-  background: #eb468d;
+  background: #fff7fb;
 }
 
 textarea {
@@ -524,7 +553,7 @@ fieldset:last-of-type input[type="submit"]:hover {
 
 fieldset:last-of-type input[type="reset"] {
   color: var(--ink);
-  background: #302326;
+  background: #f2e7ed;
   border-color: var(--border);
 }
 
@@ -533,9 +562,9 @@ footer {
   z-index: 1;
   margin-top: auto;
   padding: 22px 20px;
-  color: var(--muted);
+  color: #fff;
   text-align: center;
-  background-color: #eb468d;
+  background-color: #922b50;
   border-top: 1px solid rgba(255, 220, 215, 0.08);
 }
 

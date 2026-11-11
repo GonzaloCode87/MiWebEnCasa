@@ -108,6 +108,59 @@ nav a:hover {
   transform: translateY(-1px);
 }
 
+nav .theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  width: 46px;
+  min-width: 46px;
+  min-height: 26px;
+  height: 26px;
+  padding: 3px;
+  border: 1px solid #76515d;
+  border-radius: 999px;
+  background: #46343c;
+  cursor: pointer;
+  transition: background-color 160ms ease, transform 160ms ease;
+}
+
+nav .theme-toggle:hover {
+  background: #59282c;
+  transform: translateY(-1px);
+}
+
+nav .theme-toggle[aria-checked="true"] {
+  background: #d85d7c;
+}
+
+.theme-toggle-thumb {
+  position: relative;
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: transform 160ms ease;
+}
+
+.theme-toggle-thumb::after {
+  position: absolute;
+  inset: 0;
+  color: #46343c;
+  content: "☾";
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.theme-toggle[aria-checked="true"] .theme-toggle-thumb::after {
+  content: "☀";
+}
+
+.theme-toggle[aria-checked="true"] .theme-toggle-thumb {
+  transform: translateX(20px);
+}
+
 main {
   position: relative;
   z-index: 1;
