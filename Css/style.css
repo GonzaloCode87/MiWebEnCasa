@@ -458,12 +458,20 @@ a:hover {
 }
 
 .calculadora-teclas {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 10px;
+  width: 100%;
+  min-width: 0;
+  border-collapse: separate;
+  border-spacing: 10px;
+  background: transparent;
+}
+
+.calculadora-teclas td {
+  padding: 0;
+  border: 0;
 }
 
 .calculadora-teclas button {
+  width: 100%;
   min-height: 56px;
   padding: 8px;
   color: var(--calculadora-texto);
@@ -492,10 +500,6 @@ a:hover {
   color: #fff;
   background: linear-gradient(135deg, #a83269, #62308f);
   border-color: transparent;
-}
-
-.calculadora-teclas .tecla-cero {
-  grid-column: span 2;
 }
 
 .calculadora-teclas .tecla-igual {
