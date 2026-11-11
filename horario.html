@@ -6,7 +6,7 @@
     <title>Horario de clase</title>
     <link rel="stylesheet" href="Css/style.css" />
     <link id="tema-claro" rel="stylesheet" href="Css/claro.css" disabled />
-    <script src="../Js/script23.js" defer></script>
+    <script src="../Js/script23.js"></script>
   </head>
 
   <body>
@@ -17,7 +17,15 @@
           <li><a href="index.html">Inicio</a></li>
           <li><a href="horario.html" aria-current="page">Horario</a></li>
           <li><a href="formulario.html">Formulario</a></li>
-          <li><a href="Ejercicios.html">Ejercicios</a></li>
+          <li class="nav-dropdown">
+            <details>
+              <summary>Ejercicios</summary>
+              <ul class="dropdown-menu">
+                <li><a href="Ejercicios/index.html">Texto plano</a></li>
+                <li><a href="EjerciciosJS/index.html">JavaScript</a></li>
+              </ul>
+            </details>
+          </li>
           <li><a href="Gantt.html">Gantt</a></li>
           <li><button class="theme-toggle" type="button" role="switch" aria-label="Tema claro" aria-checked="false" onclick="cambiarTema()"><span class="theme-toggle-thumb" aria-hidden="true"></span></button></li>
         </ul>
