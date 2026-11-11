@@ -303,6 +303,69 @@ a:hover {
   align-self: flex-start;
 }
 
+.juego {
+  display: grid;
+  gap: 18px;
+  max-width: 680px;
+  margin: 28px auto 0;
+  padding: clamp(18px, 4vw, 30px);
+  background: rgba(43, 32, 34, 0.88);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+}
+
+.game-result {
+  color: #fff;
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 700;
+  border-color: rgba(255, 61, 141, 0.45);
+  background: rgba(24, 19, 21, 0.9);
+}
+
+.eleccion {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.eleccion button {
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  border-color: transparent;
+  background: linear-gradient(135deg, #a83269, #62308f);
+  transition: filter 160ms ease, transform 160ms ease;
+}
+
+.eleccion button:hover {
+  filter: brightness(1.2);
+  transform: translateY(-2px);
+}
+
+.jugada,
+.marcador {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.jugada li,
+.marcador li {
+  padding: 12px 14px;
+  color: var(--ink);
+  background: rgba(24, 19, 21, 0.75);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.marcador li {
+  color: var(--muted);
+}
+
 .schedule-wrap {
   overflow-x: auto;
   border: 1px solid var(--border);
